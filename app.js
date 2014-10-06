@@ -54,10 +54,10 @@
    * TODO: Fill in your Application information here
    */
    var twit = new ntwitter({
-    consumer_key: 'EibJRBO1NGcJvpxAIZnXjQ',
-    consumer_secret: '4etBzAdBXqe2uzHR4BN1fut1DBeGeyR0PEFuLCB1YzU',
-    access_token_key: '767069725-rGlwY6ARanWWJE5mUpHgOYzOoL3IL0xYeQZQ1Ava',
-    access_token_secret: 'yF2YtlRzpBmTmAeMAFmYnDh1vgwwLGqKC8G80s0crw'
+    consumer_key: 'aTIpG0jGl6nwp4KWhUILBQ',
+    consumer_secret: 'cUmQNsQ6u4wn4PUcoQ9PmqzFEzVmzJmGnD2gROeY',
+    access_token_key: '44984017-EKeo9ivt957w7Y6uiT2NsCFbM1PQ46KF0c5J41egQ',
+    access_token_secret: 'DvTKLNq0Nev4XriCRm8cdfRkz7uYtbgddjcl0amOSis'
   });
 
    twit
@@ -91,8 +91,8 @@ app.get('/signin_with_twitter', function(req, res){
    * TODO: Fill in your Application information here
    */
    var twit = new ntwitter({
-    consumer_key: 'EibJRBO1NGcJvpxAIZnXjQ',
-    consumer_secret: '4etBzAdBXqe2uzHR4BN1fut1DBeGeyR0PEFuLCB1YzU'});
+    consumer_key: 'aTIpG0jGl6nwp4KWhUILBQ',
+    consumer_secret: 'cUmQNsQ6u4wn4PUcoQ9PmqzFEzVmzJmGnD2gROeY'});
 
    var path = url.parse(req.url, true);
    twit.login(path.pathname,"/twitter_callback")(req,res);
@@ -116,8 +116,8 @@ app.get('/twitter_callback', function(req, res){
    */
 
    var twit = new ntwitter({
-    consumer_key: 'EibJRBO1NGcJvpxAIZnXjQ',
-    consumer_secret: '4etBzAdBXqe2uzHR4BN1fut1DBeGeyR0PEFuLCB1YzU'});
+    consumer_key: 'aTIpG0jGl6nwp4KWhUILBQ',
+    consumer_secret: 'cUmQNsQ6u4wn4PUcoQ9PmqzFEzVmzJmGnD2gROeY'});
 
    twit.gatekeeper()(req,res,function(){
     req_cookie = twit.cookie(req);
